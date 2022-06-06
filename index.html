@@ -57,7 +57,8 @@
             }).then(res => res.json())
                 .then(data => {
                     if (data) {
-                        loadAllProduct()
+                        loadAllProduct();
+                        document.getElementById('update').innerHTML = ''
                     }
                 })
         }
