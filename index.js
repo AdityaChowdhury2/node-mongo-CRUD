@@ -33,7 +33,6 @@ async function run() {
             const product = req.body;
             productCollection.insertOne(product)
                 .then(() => {
-                    console.log('Data Added Successfully');
                     res.redirect('/')
                 });
         })
